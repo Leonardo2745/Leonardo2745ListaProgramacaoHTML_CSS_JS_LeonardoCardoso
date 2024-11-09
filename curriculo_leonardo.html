@@ -7,63 +7,103 @@
     <title>Meu Currículo</title>
     <style>
         body {
-            font-family: 'Times New Roman', Times, serif;
-            color: black;
-            background-color: #f0f0f0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(0, 0, 0);   
+            background-color: rgba(192, 192, 192, 0.994);
             padding: 20px;
+            text-align: center;
+            font-size:  17px;
 
         }
-
-        .cor-vermelha-no-texto {
-            color: #f00;
+        .topics{
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+        
 
         #titulo {
 
-            font-family: 'Courier New', Courier, monospace;
-            font-family: bold;
-            color: #00ff00;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            color: #505050;
 
         }
+        #sobre{
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom:20px;
+        }
+        .conteudo{
+            text-align: left;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 20px;
+        
+        }
+        blockquote.citação{
+            /* padding-left: 10px;
+            padding-right: 10px; */
+            padding:5px, 15px, 5px, 5px;
+            float:left;
+        }
+        .autor{
+            float: right;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1 id="titulo">Currículo de Leonardo</h1>
+    <h1 id="titulo"><em>Currículo de Leonardo</em></h1>
 
-    <h2 class="cor-vermelha-no-texto">Olá sou o Leonardo, esté é o meu Curriculo</h2>
-    <hr>
+    <h2 id="sobre">Olá sou o <strong>Leonardo</strong>, esté é o meu Curriculo</h2>
+    
     <br>
+    
+    <h3 class="topics">Contato</h3>
+    
+    <div class="conteudo">
+        <p>
+        <b>Email:</b> <u>leonardoaugustodiascrdosoc@gmail.com</u>
 
-    <h3>Contato</h3>
-    <p>
-        <b>Email:</b> leonardoaugustodiascrdosoc@gmail.com
     </p>
     <p>
-        <b>Linkedin:</b> www.linkedin.com/in/
-        leonardo-augusto01
+        <b>Linkedin:</b> <u>www.linkedin.com/in/leonardo-augusto01</u>
     </p>
     <hr>
     <br>
+</div>
+    
 
-    <h3>Formação Acadêmica</h3>
 
+    <h3 class="topics">Formação Acadêmica</h3>
+<div class="conteudo">
     <p>Aqui há um pouco do meu histórico acadêmico</p>
 
     <ul>
         <li>
 
-            <p class="cor-vermelha-no-texto"><b>Ensino médio | 2022 </b> <i>Escola Estadual Desembargador Moreira dos
+            <p><b>Ensino médio | 2022 </b> <i>Escola Estadual Desembargador Moreira dos
                     Santos</i></p>
 
         </li>
-        <li><b>Tecnico em Informática para internet | 2022-2024</b></li>
+        <li><p></p><b>Tecnico em Informática para internet | 2022-2024</b></p></li>
+        
+        <li><p><b>1<sup>o</sup> lugar na redação do PROERD | 2015</b></p></li>
     </ul>
 
     <hr>
     <br>
+</div>
 
-    <h3>Qualificações e Especializações</h3>
+
+
+
+<h3 class="topics">Qualificações e Especializações</h3>
+
+<div class="conteudo">
     <ul>
 
         <li>Trabalho em equipe;</li>
@@ -72,6 +112,22 @@
 
 
     </ul>
+
+</div>
+<footer>
+    <section>
+        <blockquote>
+            <pre>
+                O <i>amor</i> é <mark>eterno</mark>, a sua manifestação pode modificar-se, mas nunca a sua essência...
+                 através do <i>amor</i> vemos as coisas com mais tranquilidade,
+                  e somente com essa tranquilidade um trabalho pode ser <b>bem-sucedido</b>.
+           
+            <span class="autor"><em><small>Vincent Van Gogh</small></em></span>
+        </pre>
+        </blockquote>
+        
+            </section>
+</footer>
 
 </body>
 
