@@ -6,6 +6,7 @@ const divForms = document.getElementById('forms');
 const inputs = divForms.querySelectorAll('input');
 
 const btn = divForms.querySelector('button');
+const cor = document.getElementById('divTema');
 
 // Visualizar os elementos instanciados no console
 console.log(inputs);
@@ -16,20 +17,20 @@ document.body.style.color = 'white';
 
 // Manipular eventos
 
-const operacoes = (a,b) =>{
+const operacoes = (a, b) => {
     return `
     <h2>Resultado das operações:</h2>
-    <p>Soma: ${(a+b)}</p>
+    <p>Soma: ${(a + b)}</p>
     <p>Subtracao: ${(a - b)}</p>
-    <p>Multiplicação: ${(a*b)}</p>
-    <p>Divisão: ${(a/b).toFixed(2)}</p>
+    <p>Multiplicação: ${(a * b)}</p>
+    <p>Divisão: ${(a / b).toFixed(2)}</p>
     `
 }
 
 btn.addEventListener('click', () => {
     //valorDigitado = input.value
 
-    if(divForms.getElementsByTagName('h3')[0]){
+    if (divForms.getElementsByTagName('h3')[0]) {
         divForms.removeChild(divForms.getElementsByTagName('h3')[0])
     }
 
@@ -43,9 +44,21 @@ btn.addEventListener('click', () => {
 }
 
 )
+function mudarCor(){
+if (document.body.style.backgroundColor === 'black') {
+    document.body.style.backgroundColor = 'white';
+    document.body.style.color = 'black';
+    cor.textContent = "Escuro"
+} else {
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+    cor.textContent = "Claro"
+}}
 
-const toogleTheme = document.getElementById(toogleTheme);
-if(document.body.style.backgroundColor){
-document.body.style.backgroundColor = 'black';
-document.body.style.color = 'white';
-}
+cor.addEventListener('click', mudarCor)
+
+// const tabuada = document.getElementById('tabuada');
+// tabuada.addEventListener('click', () => {
+
+// })
+
