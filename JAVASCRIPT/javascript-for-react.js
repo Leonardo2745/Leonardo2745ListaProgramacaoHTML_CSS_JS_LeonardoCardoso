@@ -29,6 +29,13 @@ if (entrada === "valor") {
 } else {
     console.log("Valor não encontrado!");
 }
+
+let a = 0;
+
+//if inline
+let valor = (a >= 0) ? a + 1 : 0;
+
+
 // REPETIÇÃO
 
 for (let i = 0; i < 10; i++) {
@@ -60,6 +67,12 @@ console.log(soma(2, 3));
 const minhaFuncao = () => {
     return "Exemplo";
 };
+
+const funcaoExemplo = () =>{
+    return "exemplo"
+}
+
+const funcaoExemplo2 = nome => "Olá" + nome;
 
 const somaArrow = (a, b) => a + b;
 
@@ -95,56 +108,68 @@ class Usuario extends Pessoa {
     }
 }
 
-//JAVASCRIPT no HTML
+// JAVASCRIPT no HTML
 
-//Formas de importar
+/* Formas de importar
 
-/* <script src="./exemplo.js"></script>
+<script src="./exemplo.js"></script>
 
-    ou
+ ou
 
-   <script>
-        let exemplo = ""
-    </script>
+<script>
+    let exemplo = "";
 
+</script>
 
 */
 
 <html>
     <head>
-        <script src = './exemplo.js' defer></script>// defer -> faz com que o script seja executado após o carregamento do BODY
+        <script src='./exemplo.js' defer></script>//defer = fará com que o script seja executado após o carregamento de BODY
     </head>
     <body>
         <div></div>
 
-        <script src = './exemplo.js'></script>
+        <script src='./exemplo.js'></script>
     </body>
-</html>
-
-//type "module" -> para fazer importaçõ e exportação de outros scripts, isto é, utilizando a programação modular do pardigma da POO
-
-//      <script type = "module" src = './teste.js'></script>
+ </html>   
 
 
-//IMPORTS E EXPORTS
+// type "module" -> para fazer importação e exportação de outros scripts, isto é, utilizando a programação modular do paradigma da POO
 
-// Export default para classe ou função (não pode haver mais de um export default em um arquivo.js)
 
-export default class Professor {
+//        <script type="module" src='./teste.js'></script>
+
+// Import e Exports
+
+
+// Export default para classe ou funcação (não pode haver mais de um export default em um arquivo .js)
+
+export default class Profesor {
     constructor(nome, idade, departamento){
         this.nome = nome;
         this.idade = idade;
         this.departamento = departamento;
-
     }
 }
 
+const funcao = (a,b) => a+b ;
 
-const funcao = (a, b) => a+b;
+//export default funcao;
 
-//export default função;
-export {funcao};
+export {funcao}
 
-//Import -> importa objetos e metodos tendo como base a forma omo são exportados
+// Import -> importa objetos e métodos tendo como base a forma como são exportados
 
-import Professor, {funcao} from './Professor.js';
+import Profesor, {funcao} from './Profesor.js';
+
+// Script exemplo 
+
+
+    let randomNumber = Math.random()
+    console.log(randomNumber)
+    let randomByArrayLength = randomNumber *alfabeto.length
+    console.log(randomByArrayLength)
+    let numAleatorioVetor = Math.floor(randomByArrayLength)
+    console.log(numAleatorioVetor)
+    console.log(alfabeto[numAleatorioVetor])
